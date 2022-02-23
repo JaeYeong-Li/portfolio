@@ -1,8 +1,15 @@
 import '@/App.scss';
+import Header from '@components/header';
+import Profile from '@components/profile'
 
 function App() {
   return (
-    <h1>hello world!</h1>
+    <div className="rootWrapper">
+    <Header/>
+    <div className="content">
+    <Profile/>
+    </div>
+    </div>
   );
 }
 
