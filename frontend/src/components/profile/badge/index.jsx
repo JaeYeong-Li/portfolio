@@ -3,7 +3,7 @@ import "./index.scss";
 
 const Badges = () => {
     const myBadges = ["knu.jpg", "boostcamp.png", "삼성SDS_PRO.png"];
-    return myBadges.map((e)=> <img className="badges" src={process.env.PUBLIC_URL+'/badges/'+e}/>);
+    return myBadges.map((e)=> <img key={e} className="badges" src={process.env.PUBLIC_URL+'/badges/'+e}/>);
 }
 
 const Badge = () => {
