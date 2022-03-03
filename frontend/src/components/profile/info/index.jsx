@@ -3,7 +3,7 @@ import './index.scss';
 
 const InfoMenu = () => {
     const myMenu = ["akvk98@naver.com", "Github", "Blog"]
-    return <div className="profile-infoMenu">{myMenu.map((e)=><div className="moveButton"><p>{e}</p></div>)}</div>;
+    return <div className="profile-infoMenu">{myMenu.map((e)=><div key={e} className="moveButton"><p>{e}</p></div>)}</div>;
 }
 
 const Info = () => {
