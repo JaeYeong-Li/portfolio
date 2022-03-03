@@ -1,3 +1,4 @@
+@import '@/variable.scss';
 .profile-info {
     position: relative;
     display:flex;
@@ -10,7 +11,7 @@
     .profile-logo {
         width: 35%;
         object-fit: contain;
-        box-shadow: 5px 5px 10px #BCBCBC;
+        box-shadow: 5px 5px 10px $gray1;
         margin: 10px;
     }
     .profile-infoMenu {
@@ -19,16 +20,16 @@
         flex-direction: column;
         div {
             height: calc( ( 100% - 40px) /3) ;
-            background-color: #DDD;
+            background-color: $gray3;
             border-radius: 50px;
             margin: 10px 0;
             display: flex;
             justify-content: center;
             align-items: center;
-            color: #fff;
+            color: $white;
             font-weight: bold;
             font-size: 15pt;
-            box-shadow: 5px 5px 10px #BCBCBC;
+            box-shadow: 5px 5px 10px $gray1;
         }
     }
 }
