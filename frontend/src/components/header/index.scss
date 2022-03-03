@@ -1,9 +1,12 @@
+@import '@/variable.scss';
 header {
     position:fixed;
     width: 100%;
     height: 100px;
     top: 0;
     left: 0;
+    background-color: $white;
+    z-index: 1;
     .header-background {
         position:absolute;
         width: 90%;
@@ -11,7 +14,7 @@ header {
         left: 50%;
         bottom: 0%;
         transform: translate(-50%,-50%);
-        background-color: #ddd;
+        background-color: $gray1;
     }
     .header-current {
         position:absolute;
