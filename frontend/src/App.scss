@@ -18,7 +18,8 @@ div{
   box-sizing: border-box;
 }
 .moveButton {
-  > :hover {
+  &:hover {
+    filter: brightness(70%);
     cursor:pointer;
   }
 }
