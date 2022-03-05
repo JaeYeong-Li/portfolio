@@ -18,7 +18,8 @@
         width: 65%;
         height: 100%;
         flex-direction: column;
-        div {
+        >div {
+            width:100%;
             height: calc( ( 100% - 40px) /3) ;
             background-color: $gray3;
             border-radius: 50px;
@@ -30,6 +31,9 @@
             font-weight: bold;
             font-size: 15pt;
             box-shadow: 5px 5px 10px $gray1;
+        }
+        >div:first-child:hover {
+            cursor:default;
         }
     }
 }
