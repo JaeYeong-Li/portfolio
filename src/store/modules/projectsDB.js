@@ -37,7 +37,7 @@ export const projectDB = [
     "react, redux",
     "https://github.com/JaeYeong-Li/portfolio",
     "project_portfolio.png",
-    "react, redux 환경에서 개인 제작한 웹 포트폴리오입니다"
+    "react, redux 환경에서 진행한 포트폴리오 웹 프론트 프로젝트입니다. 개인으로 프로젝트를 진행했으며, 디자인, git 관리부터 스크롤에 따른 마크업, 화면 애니메이션 등 이벤트 처리를 했습니다. heroku에서 배포했습니다. 색상 설정, 미니게임 기능을 추가할 예정입니다."
   ),
   newProject(
     "Approximate Adder",
@@ -57,15 +57,5 @@ export const projectDB = [
     "https://github.com/JaeYeong-Li/Realtime-Sales-Information-System",
     "project_realtime.png",
     "코로나로 인한 주변 가게들의 영업 시간 변경에 불편함을 느끼고 이를 해결하기 위해 개발했습니다. 점주는 현재 및 미래의 가게 영업일을 기재할 수 있으며 소비자는 희망 방문 시간에 영업하는 가게의 정보만 얻을 수 있습니다. 또한 구글 맵 api로 정보를 직관적으로 얻을 수 있습니다. 회원 관리, 가게 정보 등록 및 수정, 날짜·위치 기반 검색 및 결과 기능을 구현했습니다."
-  ),
-  newProject(
-    "Dr. Styler",
-    "etc",
-    "2020.08 ~ 2020.10",
-    "webOS, raspbian, python",
-    "https://github.com/szzi/17MB",
-    "project_styler.png",
-    "LG전자 스마트 TV용 운영체제 webOS를 활용하여 사용자의 얼굴을 인식해 맞춤 스타일링 코스 및 서비스를 제공하는 스타일러란 주제로 프로젝트를 진행했습니다. 라즈비안-webOS의 통신과 얼굴 인식을 담당했습니다. 새로운 OS 환경에서의 통신, 에러 처리 등의 경험을 했습니다.",
-    "https://youtu.be/Z-JFcNFh8d0"
   ),
 ];
