@@ -6,16 +6,16 @@
   position: relative;
   width: 100%;
   min-height: 100%;
-  height:auto;
-  display:flex;
+  height: auto;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  background: linear-gradient(to bottom, rgba(20, 20, 20, 0.1) 10%, rgba(20, 20, 20, 0.7) 70%, rgba(20, 20, 20, 1)), url('../public/img/background.jpg');
+  background: linear-gradient(to bottom, rgba(20, 20, 20, 0.1) 10%, rgba(20, 20, 20, 0.7) 70%, rgba(20, 20, 20, 1)), url("../public/img/background.jpg");
 }
-div{
+div {
   box-sizing: border-box;
   overflow-wrap: break-word;
   word-break: keep-all;
@@ -23,19 +23,19 @@ div{
 .moveButton {
   &:hover {
     filter: brightness(70%);
-    cursor:pointer;
+    cursor: pointer;
   }
 }
 
 /* Scroll Animation */
 .sa {
   opacity: 0;
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 //아래에서 위로 페이드인
 .sa-up {
-  transform: translate(0, 100px);;
+  transform: translate(0, 100px);
 }
 
 .sa.show {
