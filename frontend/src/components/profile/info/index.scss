@@ -1,36 +1,36 @@
-@import '@/variable.scss';
+@import "@/variable.scss";
 .profile-info {
-    position: relative;
-    display:flex;
-    width: 100%;
-    max-width: 900px;
-    height: 30%;
-    .profile-logo {
-        width: 35%;
-        object-fit: contain;
-        filter: drop-shadow(5px 10px 10px $gray1);
-        margin-right: 10px;
+  position: relative;
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  height: 30%;
+  .profile-logo {
+    width: 35%;
+    object-fit: contain;
+    filter: drop-shadow(5px 10px 10px $gray1);
+    margin-right: 10px;
+  }
+  .profile-infoMenu {
+    width: 65%;
+    height: 100%;
+    flex-direction: column;
+    > div {
+      width: 100%;
+      height: calc((100% - 40px) / 3);
+      background-color: $gray3;
+      border-radius: 50px;
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      font-weight: bold;
+      font-size: 15pt;
+      box-shadow: 5px 5px 10px $gray1;
     }
-    .profile-infoMenu {
-        width: 65%;
-        height: 100%;
-        flex-direction: column;
-        >div {
-            width:100%;
-            height: calc( ( 100% - 40px) /3) ;
-            background-color: $gray3;
-            border-radius: 50px;
-            margin: 10px 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: $white;
-            font-weight: bold;
-            font-size: 15pt;
-            box-shadow: 5px 5px 10px $gray1;
-        }
-        >div:first-child:hover {
-            cursor:default;
-        }
+    > div:first-child:hover {
+      cursor: default;
     }
+  }
 }

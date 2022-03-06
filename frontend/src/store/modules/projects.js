@@ -2,22 +2,6 @@ import { projectDB } from "./projectsDB";
 const ADD = "project/ADD";
 const DEL = "project/DEL";
 
-// export function add(newProject) {
-//   return {
-//     type: ADD,
-//     project: projectDB.push(newProject),
-//   };
-// }
-
-// export function del(toRemove) {
-//     let idx;
-//     projectDB.some((p,i)=>{if(p.name===toRemove) idx=i; return (p.name===toRemove)});
-//     return {
-//         type: DEL,
-//         project: projectDB.slice(idx,1),
-//     };
-// }
-
 const initState = {
   project: projectDB,
 };
