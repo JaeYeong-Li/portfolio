@@ -2,12 +2,12 @@
 .projects {
   position: relative;
   display: flex;
-  width: 80%;
+  width: 90%;
   height: 1000px;
   justify-content: space-between;
   align-items: center;
   .project {
-    width: (100% / 3);
+    width: 40%;
     height: 70%;
     border: 1px $gray2 solid;
     padding: 2%;
@@ -32,7 +32,7 @@
       font-size: 15pt;
     }
     .img > img {
-      max-height: 300px;
+      max-height: 350px;
       width: 100%;
       margin: 10px 0px;
     }
@@ -79,7 +79,7 @@
     }
   }
   > .moveButton {
-    width: fit-content;
+    max-width: 8%;
     height: 70%;
     display: flex;
     align-items: center;
