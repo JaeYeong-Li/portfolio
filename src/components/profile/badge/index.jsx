@@ -5,7 +5,7 @@ const Badges = () => {
   const myBadges = [
     "knu.jpg",
     "boostcamp.png",
-    "삼성SDS_PRO.png",
+    "삼성sds_pro.png",
     "정보처리기사.png",
   ];
   return myBadges.map((e) => (
