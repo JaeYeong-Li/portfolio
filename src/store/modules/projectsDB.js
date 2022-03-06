@@ -1,5 +1,23 @@
-const newProject = (_name, _tag, _duration, _env, _git, _img, _explanation, _demo = "") => {
-  return { name: _name, tag: _tag, duration: _duration, env: _env, git: _git, img: _img, explanation: _explanation, demo: _demo };
+const newProject = (
+  _name,
+  _tag,
+  _duration,
+  _env,
+  _git,
+  _img,
+  _explanation,
+  _demo = ""
+) => {
+  return {
+    name: _name,
+    tag: _tag,
+    duration: _duration,
+    env: _env,
+    git: _git,
+    img: _img,
+    explanation: _explanation,
+    demo: _demo,
+  };
 };
 export const projectDB = [
   newProject(

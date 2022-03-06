@@ -15,10 +15,13 @@ export default function projects(state = initState, action) {
       };
     case DEL:
       let idx;
-      projectDB.some((p,i)=>{if(p.name===action.project) idx=i; return (p.name===action.project)});
+      projectDB.some((p, i) => {
+        if (p.name === action.project) idx = i;
+        return p.name === action.project;
+      });
       return {
         ...state,
-        project: projectDB.slice(idx,1),
+        project: projectDB.slice(idx, 1),
       };
     default:
       return state;

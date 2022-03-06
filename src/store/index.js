@@ -1,10 +1,10 @@
-import { combineReducers } from 'redux';
-import setting from '@store/modules/setting';
-import projects from '@store/modules/projects';
+import { combineReducers } from "redux";
+import setting from "@store/modules/setting";
+import projects from "@store/modules/projects";
 
 const rootReducer = combineReducers({
-    setting,
-    projects
+  setting,
+  projects,
 });
 
 export default rootReducer;
