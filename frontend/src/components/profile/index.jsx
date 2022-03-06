@@ -4,7 +4,7 @@ import Introduce from '@components/profile/introduce/';
 import './index.scss';
 const Profile = () =>{
     return (
-        <div className="profile">
+        <div className="profile sa sa-up">
         <Info />
         <Badge />
         <Introduce />
