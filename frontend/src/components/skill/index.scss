@@ -13,18 +13,51 @@
     font-size: 30pt;
     > button {
         margin:0 3px;
+        &:hover {
+            cursor: pointer;
+            filter: opacity(50%) contrast(200%) drop-shadow(2px 2px 15px $white);
+        }
+        &.red {
+            color: $red;
+        }
+        &.blue {
+            color: $blue;
+        }
+        &.black {
+            color: $black;
+        }
     }
-    >button:hover {
-        cursor: pointer;
+    [data-tooltip-text]:hover {
+        position: relative;
     }
-    >.red {
-        color: $red;
-    }
-    >.blue {
-        color: $blue;
-    }
-    >.black {
-        color: $black;
+    
+    [data-tooltip-text]:hover:after {
+        background-color: #000000;
+        background-color: rgba(0, 0, 0, 0.8);
+    
+        -webkit-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+        -moz-box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+        box-shadow: 0px 0px 3px 1px rgba(50, 50, 50, 0.4);
+    
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px #000 solid;
+    
+        color: #FFFFFF;
+        font-size: 12px;
+        content: attr(data-tooltip-text);
+    
+        margin-bottom: 10px;
+        top: -50%;
+        left: 0;    
+        padding: 7px 12px;
+        position: absolute;
+        width: auto;
+        min-width: 50px;
+        max-width: 350px;
+        word-wrap: break-word;
+    
+        z-index: 9999;
     }
 }
 
@@ -35,6 +68,7 @@
     padding: 3%;
     background-color: $white;
     border: $gray2 1px solid;
+    box-shadow: 5px 5px 10px $gray1;
     .mySkill {
         align-items: center;
         height: calc(100%/4);
@@ -43,6 +77,7 @@
         font-size: 15pt;
         font-weight:500;
         color: $white;
+        overflow-x: auto;
         p {
             min-width: 50px;
             width: fit-content;
