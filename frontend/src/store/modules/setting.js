@@ -1,5 +1,6 @@
 const DARK = "setting/DARK";
 const MODE = "setting/MODE";
+const SCROLL = "setting/SCROLL";
 
 export function dark (isDark) {
     return {
@@ -15,9 +16,17 @@ export function mode(modeNum) {
     }
 }
 
+export function updateScroll(h) {
+    return {
+        type: SCROLL,
+        scroll: h
+    }
+}
+
 const initState = {
     dark: false,
     mode: 1,
+    scroll: 0
 }
 
 export default function setting(state = initState, action) {
@@ -31,6 +40,11 @@ export default function setting(state = initState, action) {
             return {
                 ...state,
                 mode: action.modeNum
+            };
+        case SCROLL:
+            return {
+                ...state,
+                scroll: action.scroll
             };
         default:
             return state;
