@@ -5,14 +5,11 @@
     width: 100%;
     max-width: 900px;
     height: 30%;
-    left: 50%;
-    top: 35%;
-    transform: translate(-50%, -50%);
     .profile-logo {
         width: 35%;
         object-fit: contain;
-        box-shadow: 5px 5px 10px $gray1;
-        margin: 10px;
+        filter: drop-shadow(5px 10px 10px $gray1);
+        margin-right: 10px;
     }
     .profile-infoMenu {
         width: 65%;
