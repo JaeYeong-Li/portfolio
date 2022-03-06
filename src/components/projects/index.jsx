@@ -7,7 +7,9 @@ const Projects = () => {
   const myProjects = useSelector((state) => state.projects.project);
   const [cIdxs, setIdxs] = useState([0, 1]);
   const moveHandler = (e) => {
-    const cButton = e.target.parentNode.classList.contains("left") ? "left" : "right";
+    const cButton = e.target.parentNode.classList.contains("left")
+      ? "left"
+      : "right";
     let idx1, idx2;
     if (cButton === "left") {
       idx2 = cIdxs[1] - 2 < 0 ? myProjects.length - 1 : cIdxs[1] - 2;
@@ -29,13 +31,21 @@ const Projects = () => {
           <div className="duration">{myProjects[idx].duration}</div>
           <div className="icons">
             <div className="git">
-              <a href={myProjects[idx].git} target="_blank" rel="noopner noreferrer">
+              <a
+                href={myProjects[idx].git}
+                target="_blank"
+                rel="noopner noreferrer"
+              >
                 <img src={process.env.PUBLIC_URL + "/icon/github.png"} />
               </a>
             </div>
             {myProjects[idx].demo !== "" ? (
               <div className="demo">
-                <a href={myProjects[idx].demo} target="_blank" rel="noopner noreferrer">
+                <a
+                  href={myProjects[idx].demo}
+                  target="_blank"
+                  rel="noopner noreferrer"
+                >
                   <img src={process.env.PUBLIC_URL + "/icon/demo.png"} />
                 </a>
               </div>

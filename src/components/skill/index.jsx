@@ -26,7 +26,11 @@ const myData = {
 };
 
 const Skill = () => {
-  const [showSkills, setShowSKills] = useState({ red: true, blue: true, black: true });
+  const [showSkills, setShowSKills] = useState({
+    red: true,
+    blue: true,
+    black: true,
+  });
   const mySkills = useRef(null);
   const skillClickHandler = (e) => {
     const pClassList = e.target.parentNode.classList;
