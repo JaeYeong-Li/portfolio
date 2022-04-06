@@ -1,11 +1,8 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable jsx-a11y/alt-text */
 import "./index.scss";
 
-const myMenu = [
-  { name: "akvk98@naver.com" },
-  { name: "Github", link: "https://github.com/JaeYeong-Li" },
-  { name: "Blog", link: "https://velog.io/@akvk98" },
-];
+const myMenu = [{ name: "akvk98@naver.com" }, { name: "Github", link: "https://github.com/JaeYeong-Li" }, { name: "Blog", link: "https://velog.io/@akvk98" }];
 const infoMenuClickHandler = (e) => {
   const curName = e.target.innerHTML;
   let idx;
@@ -24,11 +21,7 @@ const InfoMenu = () => {
             {menu.name}
           </div>
         ) : (
-          <div
-            key={menu.name}
-            className="moveButton"
-            onClick={(e) => infoMenuClickHandler(e)}
-          >
+          <div key={menu.name} className="moveButton" onClick={(e) => infoMenuClickHandler(e)}>
             {menu.name}
           </div>
         );
@@ -40,10 +33,7 @@ const InfoMenu = () => {
 const Info = () => {
   return (
     <div className="profile-info">
-      <img
-        className="profile-logo"
-        src={process.env.PUBLIC_URL + "/img/jaeyeong.png"}
-      />
+      <img className="profile-logo" src={process.env.PUBLIC_URL + "/img/jaelee.jpg"} />
       <InfoMenu />
     </div>
   );
