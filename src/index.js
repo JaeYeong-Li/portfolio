@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "@/index.css";
 import App from "@/App";
 import { createStore } from "redux";
-import rootReducer from "@store";
+import rootReducer from "./reducers";
 import { Provider } from "react-redux";
 
 const devTool =

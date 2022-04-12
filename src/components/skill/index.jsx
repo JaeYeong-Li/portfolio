@@ -1,47 +1,6 @@
-import React, { useState, useRef } from "react";
+import React from "react";
 import "./index.scss";
-
-const myData = {
-  language: [
-    { key: "JS", state: "red" },
-    { key: "C/C++", state: "red" },
-    { key: "TS", state: "blue" },
-    { key: "JAVA(Android)", state: "blue" },
-  ],
-  frontend: [
-    { key: "React", state: "red" },
-    { key: "Webpack", state: "red" },
-    { key: "SCSS", state: "red" },
-    { key: "Styled-Component", state: "red" },
-  ],
-  backend: [
-    { key: "Node.js", state: "red" },
-    { key: "mySQL", state: "blue" },
-    { key: "Sequelize", state: "blue" },
-  ],
-  cooperation: [
-    { key: "Git", state: "black" },
-    { key: "Figma", state: "black" },
-  ],
-};
-
-const Skill = () => {
-  const [showSkills, setShowSKills] = useState({
-    red: true,
-    blue: true,
-    black: true,
-  });
-  const mySkills = useRef(null);
-  const skillClickHandler = (e) => {
-    const pClassList = e.target.parentNode.classList;
-    if (!pClassList.contains("skillButton")) return;
-    const curColor = e.target.className;
-    const updatedSkills = Object.keys(showSkills).reduce((obj, key) => {
-      obj[key] = curColor === key ? !showSkills[key] : showSkills[key];
-      return obj;
-    }, {});
-    setShowSKills(updatedSkills);
-  };
+const Skill = ({ skill, toggle }) => {
   return (
     <div className="skill sa sa-up">
       <div className="skillButton hi">
@@ -49,7 +8,7 @@ const Skill = () => {
           data-tooltip-text="cooperation"
           className="black"
           onClick={(e) => {
-            skillClickHandler(e);
+            toggle(e.target.className.toUpperCase());
           }}
         >
           ●
@@ -58,7 +17,7 @@ const Skill = () => {
           data-tooltip-text="experience"
           className="blue"
           onClick={(e) => {
-            skillClickHandler(e);
+            toggle(e.target.className.toUpperCase());
           }}
         >
           ●
@@ -67,18 +26,18 @@ const Skill = () => {
           data-tooltip-text="my skills"
           className="red"
           onClick={(e) => {
-            skillClickHandler(e);
+            toggle(e.target.className.toUpperCase());
           }}
         >
           ●
         </button>
       </div>
-      <div className="mySkills" ref={mySkills}>
+      <div className="mySkills">
         <div className="mySkill">
           <p>language</p>
-          {myData.language.map((e) => {
-            return showSkills[e.state] ? (
-              <p key={e.key} className={e.state}>
+          {skill.language.map((e) => {
+            return e.show ? (
+              <p key={e.key} className={e.state.toLowerCase()}>
                 {e.key}
               </p>
             ) : null;
@@ -86,9 +45,9 @@ const Skill = () => {
         </div>
         <div className="mySkill">
           <p>frontend</p>
-          {myData.frontend.map((e) => {
-            return showSkills[e.state] ? (
-              <p key={e.key} className={e.state}>
+          {skill.frontend.map((e) => {
+            return e.show ? (
+              <p key={e.key} className={e.state.toLowerCase()}>
                 {e.key}
               </p>
             ) : null;
@@ -96,9 +55,9 @@ const Skill = () => {
         </div>
         <div className="mySkill">
           <p>backend</p>
-          {myData.backend.map((e) => {
-            return showSkills[e.state] ? (
-              <p key={e.key} className={e.state}>
+          {skill.backend.map((e) => {
+            return e.show ? (
+              <p key={e.key} className={e.state.toLowerCase()}>
                 {e.key}
               </p>
             ) : null;
@@ -106,9 +65,9 @@ const Skill = () => {
         </div>
         <div className="mySkill">
           <p>cooperation</p>
-          {myData.cooperation.map((e) => {
-            return showSkills[e.state] ? (
-              <p key={e.key} className={e.state}>
+          {skill.cooperation.map((e) => {
+            return e.show ? (
+              <p key={e.key} className={e.state.toLowerCase()}>
                 {e.key}
               </p>
             ) : null;
