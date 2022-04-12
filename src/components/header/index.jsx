@@ -1,9 +1,7 @@
 import "./index.scss";
-import { useSelector } from "react-redux";
 import { useEffect, useRef } from "react";
 
-const Header = () => {
-  const curScroll = useSelector((state) => state.setting.scroll);
+const Header = ({ curScroll }) => {
   const curHeader = useRef(null);
   useEffect(() => {
     curHeader.current.style.width = `${curScroll}%`;

@@ -1,4 +1,4 @@
-import { SETTING_MODECHANGE } from "@/action";
+import { SETTING_MODECHANGE, SETTING_SCROLL } from "@/action";
 
 export default function setting(previousState, action) {
   if (previousState === undefined) {
@@ -12,6 +12,11 @@ export default function setting(previousState, action) {
       return {
         ...previousState,
         mode: !action.text,
+      };
+    case SETTING_SCROLL:
+      return {
+        ...previousState,
+        scroll: action.text,
       };
     default:
       return previousState;
