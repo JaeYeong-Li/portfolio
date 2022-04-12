@@ -1,10 +1,11 @@
 import { combineReducers } from "redux";
-import setting from "@store/modules/setting";
-import projects from "@store/modules/projects";
-
+import setting from "./setting";
+import skill from "./skill";
+import project from "./project";
 const rootReducer = combineReducers({
   setting,
-  projects,
+  skill,
+  project,
 });
 
 export default rootReducer;

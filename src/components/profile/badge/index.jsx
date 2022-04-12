@@ -3,7 +3,7 @@ import "./index.scss";
 const Badges = () => {
   const myBadges = ["boostcamp.png", "삼성sds_pro.png", "정보처리기사.png"];
   // eslint-disable-next-line prettier/prettier
-  return myBadges.map((e) => <img className="badges" src={process.env.PUBLIC_URL + "/badges/" + e} alt={e} />);
+  return myBadges.map((e) => <img className="badges" src={process.env.PUBLIC_URL + "/badges/" + e} alt={e} key={e}/>);
 };
 
 const Badge = () => {

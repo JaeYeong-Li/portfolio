@@ -1,4 +1,5 @@
 const newProject = (
+  _id,
   _name,
   _tag,
   _duration,
@@ -9,6 +10,7 @@ const newProject = (
   _demo = ""
 ) => {
   return {
+    id: _id,
     name: _name,
     tag: _tag,
     duration: _duration,
@@ -21,6 +23,7 @@ const newProject = (
 };
 export const projectDB = [
   newProject(
+    0,
     "bmPuzzle",
     "web",
     "2021.10 ~ 2021.12",
@@ -31,6 +34,7 @@ export const projectDB = [
     "https://youtu.be/gPAK1QYn8fY"
   ),
   newProject(
+    1,
     "portfolio",
     "web",
     "2022.02 ~ 2022.03",
@@ -40,6 +44,7 @@ export const projectDB = [
     "react, redux 환경에서 진행한 포트폴리오 웹 프론트 프로젝트입니다. 개인으로 프로젝트를 진행했으며, 디자인, git 관리부터 스크롤에 따른 마크업, 화면 애니메이션 등 이벤트 처리를 했습니다. heroku에서 배포했습니다. 색상 설정, 미니게임 기능을 추가할 예정입니다."
   ),
   newProject(
+    2,
     "Approximate Adder",
     "etc",
     "2020.03 ~ 2020.09",
@@ -50,6 +55,7 @@ export const projectDB = [
     "https://youtu.be/1foM8boSv5A"
   ),
   newProject(
+    3,
     "실시간 가게 영업 정보 조회 시스템",
     "etc",
     "2020.11 ~ 2020.12",
