@@ -40,8 +40,8 @@ export const projectDB = [
     "2022.02 ~ 2022.03",
     "react, redux",
     "https://github.com/JaeYeong-Li/portfolio",
-    "project_portfolio.png",
-    "react, redux 환경에서 진행한 포트폴리오 웹 프론트 프로젝트입니다. 개인으로 프로젝트를 진행했으며, 디자인, git 관리부터 스크롤에 따른 마크업, 화면 애니메이션 등 이벤트 처리를 했습니다. heroku에서 배포했습니다. 색상 설정, 미니게임 기능을 추가할 예정입니다."
+    "project_portfolio.gif",
+    "react, redux 환경에서 진행한 포트폴리오 웹 프론트 프로젝트입니다. 개인으로 프로젝트를 진행했으며, 디자인, git 관리부터 스크롤에 따른 마크업, 화면 애니메이션 등 이벤트 처리를 했습니다. heroku에서 배포했습니다."
   ),
   newProject(
     2,
