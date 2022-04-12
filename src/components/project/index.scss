@@ -18,18 +18,21 @@
     overflow-wrap: break-word;
     word-break: keep-all;
     background-color: $white;
+
     &::-webkit-scrollbar {
       visibility: hidden;
     }
     > div {
       text-align: center;
-      font-size: 12pt;
     }
     .name {
+      width: 100%;
       height: 50px;
       font-weight: 700;
       line-height: 50px;
-      font-size: 15pt;
+      font-size: larger;
+      overflow: auto;
+      white-space: nowrap;
     }
     .img > img {
       max-height: 350px;
