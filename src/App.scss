@@ -14,7 +14,7 @@
 div {
   box-sizing: border-box;
   overflow-wrap: break-word;
-  word-break: keep-all;
+  word-break: break-all;
 }
 .moveButton {
   &:hover {
