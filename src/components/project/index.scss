@@ -31,7 +31,8 @@
       font-weight: 700;
       line-height: 50px;
       font-size: larger;
-      overflow: auto;
+      overflow-x: auto;
+      overflow-y: hidden;
       white-space: nowrap;
     }
     .img > img {
