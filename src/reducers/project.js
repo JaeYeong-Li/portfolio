@@ -12,7 +12,7 @@ export default function project(previousState, action) {
         idx2 =
           previousState[1].id - 2 < 0
             ? projectDB.length - 1
-            : projectDB.length - 2;
+            : previousState[1].id - 2;
         idx1 = idx2 - 1 < 0 ? projectDB.length - 1 : idx2 - 1;
       } else {
         idx1 =
