@@ -9,12 +9,12 @@ const mySkill = {
   ],
   frontend: [
     { key: "React", state: "RED", show: true },
-    { key: "Webpack", state: "RED", show: true },
     { key: "SCSS", state: "RED", show: true },
     { key: "Styled-Component", state: "RED", show: true },
+    { key: "Webpack", state: "BLUE", show: true },
   ],
   backend: [
-    { key: "Node.js", state: "RED", show: true },
+    { key: "Express", state: "BLUE", show: true },
     { key: "mySQL", state: "BLUE", show: true },
     { key: "Sequelize", state: "BLUE", show: true },
   ],
